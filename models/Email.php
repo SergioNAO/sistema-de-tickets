@@ -6,10 +6,8 @@
     require_once("../models/Ticket.php");
     
     class Email extends PHPMailer{
-        /* protected $gCorreo = 'pruebas.diinsel@outlook.com';
-        protected $gContrasena = 'Diinsel1505snao@'; */ 
-        protected $gCorreo = 'sergio.asencio@diinsel.com';
-        protected $gContrasena = 'Sasencio2404@';
+        protected $gCorreo = '';
+        protected $gContrasena = '';
 
         public function ticket_abierto($ticket_id){
             $ticket = new Ticket();
